@@ -42,7 +42,7 @@ class GameProvider extends ChangeNotifier {
   void submitAnswer(String input) {
     final lowerInput = input.toLowerCase().trim();
     for (var word in words.toList()) {
-      if (lowerInput == word.requiredText.toLowerCase()) {
+      if (lowerInput.contains(word.requiredText.toLowerCase())) {
         words.remove(word);
         score += 10;
         notifyListeners();

@@ -15,7 +15,7 @@ class WordWidget extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            '${word.timeLeft.toStringAsFixed(1)}',
+            word.timeLeft.toStringAsFixed(1),
             style: const TextStyle(color: Colors.red),
           ),
           Row(
@@ -26,7 +26,7 @@ class WordWidget extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               Text(
-                word.showEnglish ? '→ Tiếng Việt' : '→ Tiếng Anh',
+                word.showEnglish ? '-> Tiếng Việt' : '-> Tiếng Anh',
                 style: const TextStyle(color: Colors.blue),
               ),
             ],

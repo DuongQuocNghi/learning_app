@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           brightness: Brightness.dark,
         ),
-        home: const GameScreen1(),
+        home: GameScreen1(),
       ),
     );
   }
