@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:learning_app/game_provider.dart';
+import 'package:learning_app/game1/game_provider.dart';
 
 class GameInput extends StatefulWidget {
   const GameInput({super.key});
@@ -20,7 +20,6 @@ class GameInputState extends State<GameInput> {
   @override
   void initState() {
     super.initState();
-    _focusNode.requestFocus();
   }
 
   @override
@@ -34,7 +33,7 @@ class GameInputState extends State<GameInput> {
     if (_textController.text.isNotEmpty) {
       gameProvider.submitAnswer(_textController.text);
       _textController.clear();
-      _focusNode.requestFocus();
+      focus();
     }
   }
 

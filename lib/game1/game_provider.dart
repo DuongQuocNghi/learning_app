@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'dart:math';
-import 'models/word.dart';
+import 'package:learning_app/game1/models/word.dart';
 
 class GameProvider extends ChangeNotifier {
   final List<Word> words = [];

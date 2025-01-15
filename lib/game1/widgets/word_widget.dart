@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learning_app/models/word.dart';
+import 'package:learning_app/game1/models/word.dart';
 
 class WordWidget extends StatelessWidget {
   final Word word;

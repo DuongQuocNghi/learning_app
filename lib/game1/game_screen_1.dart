@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:learning_app/game_provider.dart';
-import 'package:learning_app/widgets/game_guide.dart';
-import 'package:learning_app/widgets/game_input.dart';
-import 'package:learning_app/widgets/score_display.dart';
-import 'package:learning_app/widgets/word_widget.dart';
+import 'package:learning_app/game1/game_provider.dart';
+import 'package:learning_app/game1/widgets/game_guide.dart';
+import 'package:learning_app/game1/widgets/game_input.dart';
+import 'package:learning_app/game1/widgets/score_display.dart';
+import 'package:learning_app/game1/widgets/word_widget.dart';
 
-class GameScreen extends StatefulWidget {
-  const GameScreen({super.key});
+class GameScreen1 extends StatefulWidget {
+  const GameScreen1({super.key});
 
   @override
-  State<GameScreen> createState() => _GameScreenState();
+  State<GameScreen1> createState() => _GameScreen1State();
 }
 
-class _GameScreenState extends State<GameScreen> with SingleTickerProviderStateMixin {
+class _GameScreen1State extends State<GameScreen1> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   DateTime? lastUpdate;
   final GlobalKey<GameInputState> _gameInputKey = GlobalKey<GameInputState>();

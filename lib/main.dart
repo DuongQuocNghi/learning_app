@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app/game1/game_screen_1.dart';
 import 'package:provider/provider.dart';
-import 'game_screen.dart';
-import 'game_provider.dart';
+import 'game1/game_provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +15,12 @@ class MyApp extends StatelessWidget {
     return ChangeNotifierProvider(
       create: (context) => GameProvider(),
       child: MaterialApp(
-        title: 'Typing Game',
+        title: 'Learning App',
         theme: ThemeData(
           primarySwatch: Colors.blue,
           brightness: Brightness.dark,
         ),
-        home: const GameScreen(),
+        home: const GameScreen1(),
       ),
     );
   }
